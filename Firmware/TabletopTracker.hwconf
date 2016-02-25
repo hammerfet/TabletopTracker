@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:device="http://www.silabs.com/sls/hc/document/device.ecore" name="EFM32ZG108F32" partId="com.silabs.mcu.si32.efm32.efm32zg.efm32zg108f32">
+  <mode name="DefaultMode">
+    <property object="DefaultMode" propertyId="mode.diagramLocation" value="100, 100"/>
+    <property object="GPIO" propertyId="ABPeripheral.included" value="true"/>
+    <property object="HFXO" propertyId="ABPeripheral.included" value="true"/>
+    <property object="HFXO" propertyId="hfxo.circuitcharacteristics.calculatedclpf" value="12.50"/>
+    <property object="HFXO" propertyId="hfxo.crystalcharacteristics.oscillationfrequency" value="24000000"/>
+    <property object="HFXO" propertyId="hfxo.result.rnegesrmaxratio" value="43.071"/>
+    <property object="PA0" propertyId="ports.settings.custompinname" value="SW2"/>
+    <property object="PA0" propertyId="ports.settings.pinmode" value="Input pull"/>
+    <property object="PB11" propertyId="ports.settings.custompinname" value="LED5"/>
+    <property object="PB11" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PB7" propertyId="ports.settings.custompinname" value="BLUE_COM"/>
+    <property object="PB7" propertyId="ports.settings.dout" value="1"/>
+    <property object="PB7" propertyId="ports.settings.filter" value="Enabled"/>
+    <property object="PB7" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PB7" propertyId="ports.settings.pulldirection" value="Pullup"/>
+    <property object="PB7" propertyId="ports.settings.pullup" value="Enabled"/>
+    <property object="PB8" propertyId="ports.settings.custompinname" value="GREEN_COM"/>
+    <property object="PB8" propertyId="ports.settings.dout" value="1"/>
+    <property object="PB8" propertyId="ports.settings.filter" value="Enabled"/>
+    <property object="PB8" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PB8" propertyId="ports.settings.pulldirection" value="Pullup"/>
+    <property object="PB8" propertyId="ports.settings.pullup" value="Enabled"/>
+    <property object="PC0" propertyId="ports.settings.custompinname" value="RED_COM"/>
+    <property object="PC0" propertyId="ports.settings.dout" value="1"/>
+    <property object="PC0" propertyId="ports.settings.filter" value="Enabled"/>
+    <property object="PC0" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PC0" propertyId="ports.settings.pulldirection" value="Pullup"/>
+    <property object="PC0" propertyId="ports.settings.pullup" value="Enabled"/>
+    <property object="PC1" propertyId="ports.settings.custompinname" value="LED6"/>
+    <property object="PC1" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PC14" propertyId="ports.settings.custompinname" value="LED2"/>
+    <property object="PC14" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PC15" propertyId="ports.settings.custompinname" value="LED1"/>
+    <property object="PC15" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PD6" propertyId="ports.settings.custompinname" value="LED4"/>
+    <property object="PD6" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PD7" propertyId="ports.settings.custompinname" value="LED3"/>
+    <property object="PD7" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PE12" propertyId="ports.settings.custompinname" value="LED7"/>
+    <property object="PE12" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PE13" propertyId="ports.settings.custompinname" value="SW1"/>
+    <property object="PE13" propertyId="ports.settings.pinmode" value="Input pull"/>
+    <property object="PF2" propertyId="ports.settings.custompinname" value="LED8"/>
+    <property object="PF2" propertyId="ports.settings.pinmode" value="Push-pull drive"/>
+    <property object="PORTIO" propertyId="portio.hfxo.enable.n" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.hfxo.enable.p" value="Enabled"/>
+    <property object="TIMER0" propertyId="ABPeripheral.included" value="true"/>
+    <property object="TIMER0" propertyId="timer.clocksettings.hfperprescaler" value="Divide by 2"/>
+    <property object="TIMER0" propertyId="timer.timerbehavior.oneshot" value="One-shot timer"/>
+    <property object="TIMER1" propertyId="ABPeripheral.included" value="true"/>
+    <property object="TIMER1" propertyId="timer.clocksettings.hfperprescaler" value="Divide by 256"/>
+  </mode>
+  <modeTransition>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.target" value="DefaultMode"/>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.source" value="RESET"/>
+  </modeTransition>
+</device:XMLDevice>
