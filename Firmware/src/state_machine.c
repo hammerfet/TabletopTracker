@@ -180,7 +180,7 @@ void state_machine(uint32_t time)
 		}
 
 		// If autopower off timer is up, then power off
-		if (time_since_last_reference_auto_power_off(time) > 60000)
+		if (time_since_last_reference_auto_power_off(time) > AUTO_POWER_OFF_TIME)
 			next_state(POWER_OFF);
 
 		break;
@@ -300,7 +300,7 @@ void state_machine(uint32_t time)
 		}
 
 		// Autopower off timer
-		if (time_since_last_reference_auto_power_off(time) > 60000)
+		if (time_since_last_reference_auto_power_off(time) > AUTO_POWER_OFF_TIME)
 			next_state(POWER_OFF);
 
 		break;

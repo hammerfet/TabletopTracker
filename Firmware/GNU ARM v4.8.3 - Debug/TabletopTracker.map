@@ -824,26 +824,26 @@ OUTPUT(TabletopTracker.axf elf32-littlearm)
  .debug_line    0x0000000000001e74       0x74 ./CMSIS/efm32zg/startup_gcc_efm32zg.o
  .debug_line    0x0000000000001ee8      0x1ef ./CMSIS/efm32zg/system_efm32zg.o
 
-.debug_str      0x0000000000000000     0x1cef
+.debug_str      0x0000000000000000     0x1d41
  .debug_str     0x0000000000000000      0xbf5 ./src/InitDevice.o
                                         0xc6b (size before relaxing)
  .debug_str     0x0000000000000bf5      0x18a ./src/led_driver.o
                                         0x447 (size before relaxing)
  .debug_str     0x0000000000000d7f      0x1d9 ./src/main.o
                                         0x434 (size before relaxing)
- .debug_str     0x0000000000000f58       0x40 ./src/random_values.o
+ .debug_str     0x0000000000000f58       0x92 ./src/random_values.o
                                         0x223 (size before relaxing)
- .debug_str     0x0000000000000f98      0x277 ./src/state_machine.o
+ .debug_str     0x0000000000000fea      0x277 ./src/state_machine.o
                                         0x5ad (size before relaxing)
- .debug_str     0x000000000000120f      0x5aa ./emlib/em_cmu.o
+ .debug_str     0x0000000000001261      0x5aa ./emlib/em_cmu.o
                                         0xa9e (size before relaxing)
- .debug_str     0x00000000000017b9      0x151 ./emlib/em_emu.o
+ .debug_str     0x000000000000180b      0x151 ./emlib/em_emu.o
                                         0x446 (size before relaxing)
- .debug_str     0x000000000000190a      0x2a1 ./emlib/em_gpio.o
+ .debug_str     0x000000000000195c      0x2a1 ./emlib/em_gpio.o
                                         0x5d6 (size before relaxing)
- .debug_str     0x0000000000001bab       0x38 ./emlib/em_timer.o
+ .debug_str     0x0000000000001bfd       0x38 ./emlib/em_timer.o
                                         0x6e7 (size before relaxing)
- .debug_str     0x0000000000001be3      0x10c ./CMSIS/efm32zg/system_efm32zg.o
+ .debug_str     0x0000000000001c35      0x10c ./CMSIS/efm32zg/system_efm32zg.o
                                         0x400 (size before relaxing)
 
 .debug_frame    0x0000000000000000      0xf40
