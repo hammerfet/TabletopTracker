@@ -36,13 +36,13 @@ src/state_machine.o: ../src/state_machine.c \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_system.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_emu.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_bus.h \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/state_machine.h \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/state_machine_private.h \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/gpio_defs.h \
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/state_machine.h \
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/state_machine_private.h \
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/gpio_defs.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_gpio.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_assert.h \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/led_driver.h \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/random_values.h
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/led_driver.h \
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/random_values.h
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32ZG/Include/em_device.h:
 
@@ -118,16 +118,16 @@ src/state_machine.o: ../src/state_machine.c \
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_bus.h:
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/state_machine.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/state_machine.h:
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/state_machine_private.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/state_machine_private.h:
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/gpio_defs.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/gpio_defs.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_gpio.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_assert.h:
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/led_driver.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/led_driver.h:
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/random_values.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/random_values.h:

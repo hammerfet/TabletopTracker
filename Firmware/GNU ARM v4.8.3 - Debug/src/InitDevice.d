@@ -1,5 +1,5 @@
 src/InitDevice.o: ../src/InitDevice.c \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/InitDevice.h \
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/InitDevice.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_system.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32ZG/Include/em_device.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32ZG/Include/efm32zg108f32.h \
@@ -43,7 +43,7 @@ src/InitDevice.o: ../src/InitDevice.c \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_gpio.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_timer.h
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/InitDevice.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/InitDevice.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_system.h:
 

@@ -34,12 +34,12 @@ src/led_driver.o: ../src/led_driver.c \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32ZG/Include/efm32zg_af_pins.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_chip.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_system.h \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/gpio_defs.h \
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/gpio_defs.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_gpio.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_bus.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_assert.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_timer.h \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/LED_Driver.h
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/LED_Driver.h
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32ZG/Include/em_device.h:
 
@@ -111,7 +111,7 @@ src/led_driver.o: ../src/led_driver.c \
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_system.h:
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/gpio_defs.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/gpio_defs.h:
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_gpio.h:
 
@@ -121,4 +121,4 @@ src/led_driver.o: ../src/led_driver.c \
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_timer.h:
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/LED_Driver.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/LED_Driver.h:
