@@ -39,9 +39,9 @@ src/main.o: ../src/main.c \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_emu.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_bus.h \
  /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_gpio.h \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/InitDevice.h \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/led_driver.h \
- /Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/state_machine.h
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/InitDevice.h \
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/led_driver.h \
+ /Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/state_machine.h
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/Device/SiliconLabs/EFM32ZG/Include/em_device.h:
 
@@ -123,8 +123,8 @@ src/main.o: ../src/main.c \
 
 /Applications/SimplicityStudio_v3/developer/sdks/efm32/v2/emlib/inc/em_gpio.h:
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/InitDevice.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/InitDevice.h:
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/led_driver.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/led_driver.h:
 
-/Users/hammerfet/Dropbox/Projects/TabletopTracker/Firmware/inc/state_machine.h:
+/Users/hammerfet/Documents/GitHub/TabletopTracker/Firmware/inc/state_machine.h:

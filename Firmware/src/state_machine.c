@@ -17,7 +17,7 @@
 
 
 // Application variables
-#define AUTO_POWER_OFF_TIME 60000
+#define AUTO_POWER_OFF_TIME 1800000 // 30min power off timer
 
 static uint8_t led_counter = 0;
 static int8_t health_fatigue_count = 0;
@@ -81,10 +81,60 @@ void state_machine(uint32_t time)
 		break;
 
 
+	// If both buttons are held for a certain time, the device powers off
+	case MODE_1_POWER_OFF_HOLD_BUTTON:
+
+		if(time_since_last_reference(time) > 200)
+		{
+			set_reference_time(time);
+			if(BUTTON_1_HIGH && BUTTON_2_HIGH)
+			{
+				led_set_colour_ms(led_counter++, 0, 0, 0, 10000, 100);
+				{
+					if (led_counter == 8)
+					next_state(POWER_OFF);
+				}
+			}
+
+			else
+			{
+				led_clear_all_ms(100);
+				next_state(MODE_1_SET_LED);
+			}
+		}
+
+		break;
+
+
+	// If both buttons are held for a certain time, the device powers off
+	case MODE_2_POWER_OFF_HOLD_BUTTON:
+
+		if(time_since_last_reference(time) > 200)
+		{
+			set_reference_time(time);
+			if(BUTTON_1_HIGH && BUTTON_2_HIGH)
+			{
+				led_set_colour_ms(led_counter++, 0, 0, 0, 10000, 100);
+				{
+					if (led_counter == 8)
+					next_state(POWER_OFF);
+				}
+			}
+
+			else
+			{
+				led_clear_all_ms(100);
+				next_state(MODE_2_SET_LED);
+			}
+		}
+
+		break;
+
+
 	// Starts Mode 1 (health/fatigue counter) just a nice effect
 	case MODE_1_INIT:
 
-		if (time_since_last_reference(time) > 200)
+		if (time_since_last_reference(time) > 150)
 		{
 			if (led_counter < 8)
 			{
@@ -115,7 +165,7 @@ void state_machine(uint32_t time)
 	// Starts Mode 2 (coloured tokens) just a nice effect
 	case MODE_2_INIT:
 
-		if (time_since_last_reference(time) > 200)
+		if (time_since_last_reference(time) > 150)
 		{
 			if (led_counter < 8)
 			{
@@ -149,8 +199,18 @@ void state_machine(uint32_t time)
 	// positive numbers count health and negative numbers count fatigue
 	case MODE_1:
 
+		// Power off/switch mode
+		if(BUTTON_1_HIGH && BUTTON_2_HIGH)
+		{
+			led_counter = 0;
+			set_reference_time(time);
+			set_reference_time_auto_power_off(time);
+			next_state(MODE_1_POWER_OFF_HOLD_BUTTON);
+			led_set_colour_all_ms(3333, 3333, 3333, 0, 100);
+		}
+
 		// If button up then increment the health/fatigue count
-		if(BUTTON_1_HIGH)
+		else if(BUTTON_1_HIGH)
 		{
 			if (health_fatigue_count < 24) // obey max limit of 24
 				health_fatigue_count++;
@@ -173,7 +233,7 @@ void state_machine(uint32_t time)
 
 		// After 10s and if health counter is 0,
 		// do an effect so show device is still on
-		else if (time_since_last_reference(time) > 10000)
+		else if (time_since_last_reference(time) > 5000)
 		{
 			if (health_fatigue_count == 0)
 				next_state(MODE_1_INIT);
@@ -246,18 +306,28 @@ void state_machine(uint32_t time)
 	// Mode 2 button checker and auto power off timeout
 	case MODE_2:
 
+		// Power off/switch mode
+		if(BUTTON_1_HIGH && BUTTON_2_HIGH)
+		{
+			led_counter = 0;
+			set_reference_time(time);
+			set_reference_time_auto_power_off(time);
+			next_state(MODE_2_POWER_OFF_HOLD_BUTTON);
+			led_set_colour_all_ms(3333, 3333, 3333, 0, 100);
+			break;
+		}
+
 		// This counter rolls around at 20. There are three
 		// banks of colour effects with 7 colours each
 		// 0 to 7 are solid colours, 8 to 14 are twinkle effects
 		// and 15 to 20 are swirl effects
-		if(BUTTON_1_HIGH)
+		else if(BUTTON_1_HIGH)
 		{
 			token_colour++;
 			if (token_colour > 20)
 				token_colour = 0;
 			set_reference_time_auto_power_off(time);
 			next_state(MODE_2_SET_LED);
-			break;
 		}
 
 		else if (BUTTON_2_HIGH)
@@ -271,7 +341,7 @@ void state_machine(uint32_t time)
 		}
 
 		// if 6 < token colour < 14.. we can apply a flash effect
-		if (token_colour > 6 && token_colour < 14)
+		else if (token_colour > 6 && token_colour < 14)
 		{
 			if(time_since_last_reference(time) > random_time)
 			{
